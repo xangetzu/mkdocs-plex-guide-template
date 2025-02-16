@@ -15,6 +15,6 @@ def define_env(env):
         "year": current_year,
         "request_url": "request.example.com",
         "plex_url": "plex.example.com",
-        "plex_libraries": "Movies and TV Shows"
+        "plex_libraries": "Movies and TV Shows",
         "noreply_email": "noreply@example.com",
     })
