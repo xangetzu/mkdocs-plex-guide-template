@@ -3,8 +3,8 @@
 A standardized documentation template for your Plex server, built with Material for MkDocs and deployed via GitHub Pages. This template includes pre-built pages covering common Plex topics like streaming quality, content requests, transcoding, and more.
 
 ## 🚀 Getting Started
-> [!NOTE]
-> When forking, you only need the main branch. The gh-pages branch will be created automatically by our workflow.
+> [!IMPORTANT]
+> Complete all steps below to ensure your site deploys correctly. Missing any step will cause the deployment to fail.
 
 1. Fork this repository to your own GitHub account
 
