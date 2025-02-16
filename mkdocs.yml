@@ -1,5 +1,6 @@
 site_name: "{{ username }}.github.io"
 site_url: "https://{{ username }}.github.io"
+repo_url: "https://github.com/{{ username }}/{{ repo_name }}"
 theme:
   name: material
   logo: assets/images/plex-logo.webp
@@ -67,7 +68,8 @@ nav:
 plugins:
   - search
   - mkdocs-video
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      enable_creation_date: true
   - git-committers:
       repository: "{{ username }}/{{ repo_name }}"
       branch: main
