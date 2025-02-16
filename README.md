@@ -15,6 +15,9 @@ Your site will be available at `https://yourusername.github.io/mkdocs-plex-guide
 
 The template will automatically use your GitHub username and repository name throughout the site. You can see this in action at my demo site: https://mistercalvin.github.io/mkdocs-plex-guide-template
 
+### Automatic Deployment
+The site is automatically built using GitHub Actions whenever changes are pushed to the main branch. After a successful build, the site is deployed to the `gh-pages` branch, which GitHub Pages then serves automatically. You can monitor the build and deployment process in the Actions tab of your repository.
+
 ## 📝 Customization
 
 ### Basic Configuration
