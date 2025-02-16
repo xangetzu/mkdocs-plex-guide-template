@@ -12,12 +12,11 @@ New Plex accounts are automatically subscribed to Plex's company newsletter. Thi
 ## My Weekly Newsletter
 I send out a separate, personal newsletter every Friday at 5:00 PM. You can identify it by:
 
-- Email address sending this newsletter will be `noreply@mydomain.com`
-- Links to newsletter.plex.mydomain.com
+- Email address sending this newsletter will be `noreply@{{ domain }}.com`
 - The newsletter itself will have a logo with the name of my Plex server
 
 If you'd like to unsubscribe from my newsletter, please contact me privately.
 
-!!! example "newsletter.plex.mydomain.com"
+!!! example ""
 
     ![Example](assets/images/custom-newsletter.webp)

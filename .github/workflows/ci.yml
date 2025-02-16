@@ -49,4 +49,5 @@ jobs:
         env:
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          CURRENT_YEAR: $(date +'%Y')
         run: mkdocs gh-deploy --force
