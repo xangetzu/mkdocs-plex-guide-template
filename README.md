@@ -52,8 +52,7 @@ Edit these in [`main.py`](main.py) in the project root. These values are used th
 ## 📚 Resources
 
 ### Documentation / Plugins
-- [Material for MkDocs Customization](https://squidfunk.github.io/mkdocs-material/customization/)
-- [Publishing Your Site](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#github-pages)
+- [Material for MkDocs - Getting started](https://squidfunk.github.io/mkdocs-material/getting-started/)
 - [MkDocs Plugins Catalog](https://github.com/mkdocs/catalog)
 - [MKDocs Pasword Encryption Plugin](https://github.com/unverbuggt/mkdocs-encryptcontent-plugin)
 
