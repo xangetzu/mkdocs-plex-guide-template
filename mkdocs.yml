@@ -1,5 +1,5 @@
-site_name: !ENV [GITHUB_REPOSITORY_OWNER, 'Ghost'] + '.github.io'
-site_url: 'https://' + !ENV [GITHUB_REPOSITORY_OWNER, 'Ghost'] + '.github.io'
+site_name: "{{ username }}.github.io"
+site_url: "https://{{ username }}.github.io"
 theme:
   name: material
   logo: assets/images/plex-logo.webp
@@ -69,13 +69,9 @@ plugins:
   - mkdocs-video
   - git-revision-date-localized
   - git-committers:
-      repository: !ENV [GITHUB_REPOSITORY, 'Ghost/repo']
+      repository: "{{ username }}/{{ repo_name }}"
       branch: main
-  - macros:
-      variables:
-        username: !ENV [GITHUB_REPOSITORY_OWNER, 'Ghost']
-        request_url: 'request.example.com'
-        domain: 'example.com'
+  - macros
 
 markdown_extensions:
   - toc:
@@ -97,7 +93,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-copyright: 'Copyright © ' + !ENV [CURRENT_YEAR, '2025'] + ' ' + !ENV [GITHUB_REPOSITORY_OWNER, 'Ghost']
+copyright: "Copyright &copy; {{ year }} {{ username }}"
 
 extra_css:
   - stylesheets/extra.css
@@ -105,11 +101,11 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: 'https://github.com/' + !ENV [GITHUB_REPOSITORY_OWNER, 'Ghost']
-      name: !ENV [GITHUB_REPOSITORY_OWNER, 'Ghost'] + ' @ Github'
+      link: "https://github.com/{{ username }}"
+      name: "{{ username }} @ Github"
     - icon: fontawesome/brands/discord
       link: https://discord.com
       name: Discord Channel
     - icon: fontawesome/solid/globe
-      link: 'https://' + !ENV [GITHUB_REPOSITORY_OWNER, 'Ghost'] + '.github.io'
+      link: "https://{{ username }}.github.io"
       name: Personal Website
