@@ -18,4 +18,4 @@ regex>=2022.4
 requests~=2.26
 mkdocs-git-revision-date-localized-plugin
 mkdocs-git-committers-plugin-2~=2.5.0
-git+https://github.com/SivagiriVisakan/mkdocs-replace-plugin.git
+mkdocs-macros-plugin

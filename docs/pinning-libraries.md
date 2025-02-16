@@ -2,7 +2,7 @@
 
 After accepting your invitation to my Plex server, you'll need to pin my shared libraries to your sidebar. This is a required step - without it, you might only see Plex's default content instead of my media collection. Here's what you need to know:
 
-1. Look for "<REPLACE_ME>'s Plex" in your media sources
+1. Look for "{{ meta.username }}'s Plex" in your media sources
 2. You'll see two libraries: Movies and TV Shows
 3. Pin both of these libraries to your sidebar
 

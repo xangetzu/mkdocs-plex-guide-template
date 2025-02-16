@@ -1,5 +1,5 @@
-site_name: "{{ meta.username }}.github.io"
-site_url: "https://{{ meta.username }}.github.io"
+site_name: "{{ config.extra.site.username }}.github.io"
+site_url: "https://{{ config.extra.site.username }}.github.io"
 theme:
   name: material
   logo: assets/images/plex-logo.webp
@@ -57,7 +57,7 @@ nav:
     - I requested something an hour ago but it hasn't shown up yet. Why?: faq/missing-requests.md
     - I'm having a problem with a Movie or TV Show: faq/content-issues.md
     - Content Quality and Language Options: faq/special-requests.md
-    - I don't want to use this request thingy, can't I just text you what I want?: faq/i-dont-want-to-use-overseerr.md
+    - I don't want to use this request thingy, can't I just tell you what I want?: faq/i-dont-want-to-use-overseerr.md
     - Missing Confirmation Emails: faq/missing-emails.md
     - Can I share your Plex server with someone else?: faq/can-i-share-your-plex.md
     - Plex is awesome! Can I send you some money to support it?: faq/how-can-i-support-you.md
@@ -69,9 +69,9 @@ plugins:
   - mkdocs-video
   - git-revision-date-localized
   - git-committers:
-      repository: "{{ meta.full_repo }}"
+      repository: !ENV [GITHUB_REPOSITORY, "your-username/your-repo"]
       branch: main
-  - replace
+  - macros
 
 markdown_extensions:
   - toc:
@@ -93,7 +93,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-copyright: "Copyright &copy; {{ meta.year }} {{ meta.username }}"
+copyright: "Copyright &copy; {{ page.meta.git_creation_date_localized.year }} {{ config.extra.site.username }}"
 
 extra_css:
   - stylesheets/extra.css
@@ -101,11 +101,16 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: "https://github.com/{{ meta.username }}"
-      name: "{{ meta.username }} @ Github"
+      link: "https://github.com/{{ config.extra.site.username }}"
+      name: "{{ config.extra.site.username }} @ Github"
     - icon: fontawesome/brands/discord
       link: https://discord.com
       name: Discord Channel
     - icon: fontawesome/solid/globe
-      link: "https://{{ meta.username }}.github.io"
+      link: "https://{{ config.extra.site.username }}.github.io"
       name: Personal Website
+  site:
+    username: !ENV [GITHUB_REPOSITORY_OWNER, "Ghost"]
+    repo_name: !ENV [GITHUB_REPOSITORY_NAME, "mkdocs-plex-guide-template"]
+    domain: "example.com"
+    request_url: "request.example.com"
