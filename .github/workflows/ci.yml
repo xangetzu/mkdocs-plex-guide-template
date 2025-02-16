@@ -54,18 +54,18 @@ jobs:
         with:
           python-version: 3.x
 
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-
       - uses: actions/cache@v4
         with:
-          key: requirements-${{ env.cache_id }}
-          path: .cache
+          key: pip-wheels-${{ runner.os }}-py3-${{ hashFiles('requirements.txt') }}
+          path: |
+            ~/.cache/pip
+            ~/.local/lib/python*/site-packages
           restore-keys: |
-            requirements-
+            pip-wheels-${{ runner.os }}-py3-
+            pip-wheels-${{ runner.os }}-
 
       - run: |
           pip install -r requirements.txt
-          pip install git+https://github.com/SivagiriVisakan/mkdocs-replace-plugin.git
 
       - name: Build and Deploy
         env:
