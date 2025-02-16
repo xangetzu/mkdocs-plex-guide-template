@@ -7,20 +7,27 @@ A standardized documentation template for your Plex server, built with Material 
 > When forking, you only need the main branch. The gh-pages branch will be created automatically by our workflow.
 
 1. Fork this repository to your own GitHub account
-2. Enable GitHub Actions:
+
+2. Enable GitHub Pages:
+   * Go to Settings > Pages
+   * Under "Build and deployment", set Source to "GitHub Actions"
+   * Click Save
+
+3. Enable GitHub Actions:
    * Go to Actions tab (top of this page)
    * Click "I understand my workflows, go ahead and enable them"
-3. Run the CI workflow to create the gh-pages branch:
+
+4. Run the workflow:
    * Option 1: Modify and push a change (e.g., customize variables in [main.py](main.py))
    * Option 2: Manually trigger the workflow
      * Go to Actions tab
-     * Select "Build MkDocs Site" workflow from the left sidebar
+     * Select "Build and Deploy MkDocs Site" workflow from the left sidebar
      * Click "Run workflow" dropdown button
      * Select branch (main) and click "Run workflow"
 
 Your site will be available at `https://yourusername.github.io/mkdocs-plex-guide-template` after the workflow completes.
 
-The template will automatically use your GitHub username and repository name throughout the site. You can see this in action at my demo site: https://mistercalvin.github.io/mkdocs-plex-guide-template
+The template will automatically use your GitHub username and repository name throughout the site. You can see this in action at my demo site: https://mistercalvin.github.io/
 
 ### Automatic Deployment
 The site is automatically built using GitHub Actions whenever changes are pushed to the main branch. After a successful build, the site is deployed to the `gh-pages` branch, which GitHub Pages then serves automatically. You can monitor the build and deployment process in the Actions tab of your repository.
