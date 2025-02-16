@@ -42,7 +42,7 @@ You can customize default values for:
 - request_url: `request.example.com`
 - plex_url: `plex.example.com`
 - plex_libraries: `Movies and TV Shows`
-- noreply_email: `example.com`
+- noreply_email: `noreply@example.com`
 
 Edit these in [`main.py`](main.py) in the project root. These values are used throughout the rendered markdown pages.
 
