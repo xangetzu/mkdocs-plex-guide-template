@@ -77,7 +77,7 @@ plugins:
   - git-committers:
       repository: "{{ username }}/{{ repo_name }}"
       branch: main
-      exclude:
+      exclude_committers:
         - "web-flow"  # GitHub web UI edits
         - "actions-user"  # GitHub Actions
         - "github-actions[bot]"  # GitHub Actions bot
