@@ -51,10 +51,11 @@ Edit these in [`main.py`](main.py) in the project root. These values are used th
 
 ## 📚 Resources
 
-### Documentation
+### Documentation / Plugins
 - [Material for MkDocs Customization](https://squidfunk.github.io/mkdocs-material/customization/)
 - [Publishing Your Site](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#github-pages)
 - [MkDocs Plugins Catalog](https://github.com/mkdocs/catalog)
+- [MKDocs Pasword Encryption Plugin](https://github.com/unverbuggt/mkdocs-encryptcontent-plugin)
 
 ### Video Tutorials
 - [Creating Documentation with MkDocs Material Theme](https://www.youtube.com/watch?v=Q-YA_dA8C20) - James Willett
