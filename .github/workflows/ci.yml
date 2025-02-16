@@ -1,4 +1,4 @@
-name: ci
+name: Build MkDocs Site
 
 on:
   push:
@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  build:
     # Skip if commit message contains [skip ci]
     if: |
       !contains(github.event.head_commit.message, '[skip ci]') &&
