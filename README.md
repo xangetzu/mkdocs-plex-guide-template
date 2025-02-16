@@ -14,7 +14,7 @@ A standardized documentation template for your Plex server, built with Material 
    * Option 1: Modify and push a change (e.g., customize variables in [main.py](main.py))
    * Option 2: Manually trigger the workflow
      * Go to Actions tab
-     * Select "ci" workflow from the left sidebar
+     * Select "Build MkDocs Site" workflow from the left sidebar
      * Click "Run workflow" dropdown button
      * Select branch (main) and click "Run workflow"
 
