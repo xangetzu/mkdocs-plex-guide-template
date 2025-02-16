@@ -27,27 +27,23 @@ The site is automatically built using GitHub Actions whenever changes are pushed
 ## 📝 Customization
 
 ### Basic Configuration
-The following values are automatically set via environment variables in [`ci.yml`](.github/workflows/ci.yml):
+The following values are automatically set via environment variables in [`ci.yml`](.github/workflows/ci.yml) and used in the header + footer of your MKDocs site:
 - `username` - Your GitHub username (lowercase)
 - `repo_name` - Repository name
 - `year` - Current year
 
-These values are used for the header / footer within MKDocs.
+### Default Values
+The following values can be set in [`main.py`](main.py) or in Settings (top of this page) > Security > Secrets and variables > Actions > Variables tab. These values are used throughout the rendered site pages:
+- request_url: `request.example.com`
+- plex_url: `plex.example.com`
+- plex_libraries: `Movies and TV Shows`
+- noreply_email: `noreply@example.com`
 
 ### Content Customization
 Key files to modify:
 - `docs/*.md` - Documentation pages
 - `docs/stylesheets/extra.css` - [Custom admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#custom-admonitions)
 - `docs/assets/` - Images and video
-
-### Default Values
-You can customize default values for:
-- request_url: `request.example.com`
-- plex_url: `plex.example.com`
-- plex_libraries: `Movies and TV Shows`
-- noreply_email: `noreply@example.com`
-
-Edit these in [`main.py`](main.py) in the project root. These values are used throughout the rendered markdown pages.
 
 ## 📚 Resources
 
