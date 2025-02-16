@@ -1,5 +1,5 @@
-site_name: "{{ config.extra.site.username }}.github.io"
-site_url: "https://{{ config.extra.site.username }}.github.io"
+site_name: "{{ username }}.github.io"
+site_url: "https://{{ username }}.github.io"
 theme:
   name: material
   logo: assets/images/plex-logo.webp
@@ -69,7 +69,7 @@ plugins:
   - mkdocs-video
   - git-revision-date-localized
   - git-committers:
-      repository: !ENV [GITHUB_REPOSITORY, "your-username/your-repo"]
+      repository: "{{ username }}/{{ repo_name }}"
       branch: main
   - macros
 
@@ -93,7 +93,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-copyright: "Copyright &copy; {{ page.meta.git_creation_date_localized.year }} {{ config.extra.site.username }}"
+copyright: "Copyright &copy; {{ git.date.year }} {{ username }}"
 
 extra_css:
   - stylesheets/extra.css
@@ -109,8 +109,3 @@ extra:
     - icon: fontawesome/solid/globe
       link: "https://{{ config.extra.site.username }}.github.io"
       name: Personal Website
-  site:
-    username: !ENV [GITHUB_REPOSITORY_OWNER, "Ghost"]
-    repo_name: !ENV [GITHUB_REPOSITORY_NAME, "mkdocs-plex-guide-template"]
-    domain: "example.com"
-    request_url: "request.example.com"
