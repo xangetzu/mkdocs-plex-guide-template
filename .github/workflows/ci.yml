@@ -2,8 +2,7 @@ name: ci
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     tags:
       - '*'  # This will trigger on any tag
   workflow_dispatch:
@@ -19,6 +18,11 @@ jobs:
       !contains(github.event.head_commit.message, '[ci skip]') &&
       !contains(github.event.head_commit.message, '[skip-ci]') &&
       !contains(github.event.head_commit.message, '[no ci]') &&
+      (
+        github.event_name == 'push' ||
+        github.event_name == 'workflow_dispatch' ||
+        github.event_name == 'pull_request'
+      )
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
