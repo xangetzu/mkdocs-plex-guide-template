@@ -77,6 +77,14 @@ plugins:
   - git-committers:
       repository: "{{ username }}/{{ repo_name }}"
       branch: main
+      exclude:
+        - "web-flow"  # GitHub web UI edits
+        - "actions-user"  # GitHub Actions
+        - "github-actions[bot]"  # GitHub Actions bot
+      # For a repository hosted on GitHub, you can provide a token to increase the rate limit and go beyond the default 60 requests per hour per IP address.
+      # The plugin will make one request per mkdocs document
+      # See: https://github.com/ojacques/mkdocs-git-committers-plugin-2
+      #token:
   - macros
 
 markdown_extensions:

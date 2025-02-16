@@ -57,6 +57,14 @@ jobs:
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
 
+      - uses: actions/cache@v4
+        id: cache-committers
+        with:
+          key: git-committers-${{ github.sha }}
+          path: .cache/plugin/git-committers
+          restore-keys: |
+            git-committers-
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
