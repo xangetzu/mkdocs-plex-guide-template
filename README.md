@@ -1,7 +1,6 @@
 # Plex Documentation Guide
 
 [![Build and Deploy MkDocs Site](https://github.com/MisterCalvin/mkdocs-plex-guide-template/actions/workflows/ci.yml/badge.svg)](https://github.com/MisterCalvin/mkdocs-plex-guide-template/actions/workflows/ci.yml)
-[![pages-build-deployment](https://github.com/MisterCalvin/mkdocs-plex-guide-template/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/MisterCalvin/mkdocs-plex-guide-template/actions/workflows/pages/pages-build-deployment)
 
 A standardized documentation template for your Plex server, built with Material for MkDocs and deployed via GitHub Pages. This template includes pre-built pages covering common Plex topics like streaming quality, content requests, transcoding, and more.
 
