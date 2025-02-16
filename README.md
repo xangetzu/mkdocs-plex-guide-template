@@ -2,22 +2,28 @@
 
 A standardized documentation template for your Plex server, built with Material for MkDocs and deployed via GitHub Pages. This template includes pre-built pages covering common Plex topics like streaming quality, content requests, transcoding, and more.
 
-> [!IMPORTANT]
-> Follow each step carefully, missing any step will prevent your site from working. The setup process requires both GitHub Actions for automated builds and GitHub Pages for deploying the hosted pages. Github Actions in particular is disabled by default when forking a repo.
-
 ## 🚀 Getting Started
+> [!NOTE]
+> When forking, you only need the main branch. The gh-pages branch will be created automatically by our workflow.
 
 1. Fork this repository to your own GitHub account
 2. Enable GitHub Actions:
-   - Go to Actions tab (top of this page)
-   - Click "I understand my workflows, go ahead and enable them"
-3. Configure GitHub Pages:
-   - Go to Settings (top of this page) > Pages
-   - Set "Source" to "Deploy from a branch"
-   - Select "gh-pages" branch and "/" (root) folder
-   - Click Save
+  - Go to Actions tab (top of this page)
+  - Click "I understand my workflows, go ahead and enable them"
+3. Run the CI workflow to create the gh-pages branch:
+  - Option 1: Modify and push a change (e.g., customize variables in `main.py`)
+  - Option 2: Manually trigger the workflow
+    - Go to Actions tab
+    - Select "ci" workflow from the left sidebar
+    - Click "Run workflow" dropdown button
+    - Select branch (main) and click "Run workflow"
+4. After the workflow action finishes successfully, configure GitHub Pages:
+  - Go to Settings (top of this page) > Pages
+  - Set "Source" to "Deploy from a branch"
+  - Select "gh-pages" branch and "/" (root) folder
+  - Click Save
 
-Your site will be available at `https://yourusername.github.io/mkdocs-plex-guide-template`
+Your site will be available at `https://yourusername.github.io/mkdocs-plex-guide-template` after the workflow completes.
 
 The template will automatically use your GitHub username and repository name throughout the site. You can see this in action at my demo site: https://mistercalvin.github.io/mkdocs-plex-guide-template
 
