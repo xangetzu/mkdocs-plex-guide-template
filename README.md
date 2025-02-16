@@ -19,8 +19,8 @@ A standardized documentation template for your Plex server, built with Material 
 
 2. Enable GitHub Pages:
    * Go to [Settings > Pages](../../settings/pages)
-   * Under "Build and deployment", set Source to "GitHub Actions"
-   * Click Save
+   * Under "Build and deployment", change Source to "GitHub Actions"
+   * Click Save and wait for the blue success message "GitHub Pages source saved"
 
 3. Enable GitHub Actions:
    * Go to [Actions tab](../../actions)
