@@ -9,6 +9,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -24,6 +26,9 @@ jobs:
         github.event_name == 'pull_request'
       )
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     env:
       GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
       GITHUB_REPOSITORY: ${{ github.repository }}
@@ -32,11 +37,15 @@ jobs:
       PLEX_LIBRARIES: ${{ vars.PLEX_LIBRARIES }}
       NOREPLY_EMAIL: ${{ vars.NOREPLY_EMAIL }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Generate mkdocs.yml
+      - name: Configure Github Pages
+        uses: actions/configure-pages@v4
+
+      - name: Update mkdocs.yml
         run: |
           # Get current year
           YEAR=$(date +'%Y')
@@ -57,7 +66,8 @@ jobs:
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
 
-      - uses: actions/cache@v4
+      - name: Cache git committers
+        uses: actions/cache@v4
         id: cache-committers
         with:
           key: git-committers-${{ github.sha }}
@@ -65,11 +75,13 @@ jobs:
           restore-keys: |
             git-committers-
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: 3.x
 
-      - uses: actions/cache@v4
+      - name: Cache requirements.txt
+        uses: actions/cache@v4
         with:
           key: pip-wheels-${{ runner.os }}-py3-${{ hashFiles('requirements.txt') }}
           path: |
@@ -79,12 +91,9 @@ jobs:
             pip-wheels-${{ runner.os }}-py3-
             pip-wheels-${{ runner.os }}-
 
-      - run: |
+      - name: Install Dependencies
+        run: |
           pip install -r requirements.txt
 
       - name: Build and Deploy
-        env:
-          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          CURRENT_YEAR: $(date +'%Y')
         run: mkdocs gh-deploy --force

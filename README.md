@@ -8,20 +8,15 @@ A standardized documentation template for your Plex server, built with Material 
 
 1. Fork this repository to your own GitHub account
 2. Enable GitHub Actions:
-  - Go to Actions tab (top of this page)
-  - Click "I understand my workflows, go ahead and enable them"
+   * Go to Actions tab (top of this page)
+   * Click "I understand my workflows, go ahead and enable them"
 3. Run the CI workflow to create the gh-pages branch:
-  - Option 1: Modify and push a change (e.g., customize variables in `main.py`)
-  - Option 2: Manually trigger the workflow
-    - Go to Actions tab
-    - Select "ci" workflow from the left sidebar
-    - Click "Run workflow" dropdown button
-    - Select branch (main) and click "Run workflow"
-4. After the workflow action finishes successfully, configure GitHub Pages:
-  - Go to Settings (top of this page) > Pages
-  - Set "Source" to "Deploy from a branch"
-  - Select "gh-pages" branch and "/" (root) folder
-  - Click Save
+   * Option 1: Modify and push a change (e.g., customize variables in [main.py](main.py))
+   * Option 2: Manually trigger the workflow
+     * Go to Actions tab
+     * Select "ci" workflow from the left sidebar
+     * Click "Run workflow" dropdown button
+     * Select branch (main) and click "Run workflow"
 
 Your site will be available at `https://yourusername.github.io/mkdocs-plex-guide-template` after the workflow completes.
 
