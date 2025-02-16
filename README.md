@@ -5,11 +5,14 @@ A standardized documentation template for your Plex server, built with Material 
 ## 🚀 Getting Started
 
 1. Fork this repository to your own GitHub account
-2. Configure GitHub Pages:
-  - Go to Settings > Pages
-  - Set "Source" to "Deploy from a branch"
-  - Select "gh-pages" branch and "/" (root) folder
-  - Click Save
+2. Enable GitHub Actions:
+   - Go to Actions tab (top of this page)
+   - Click "I understand my workflows, go ahead and enable them"
+3. Configure GitHub Pages:
+   - Go to Settings (top of this page) > Pages
+   - Set "Source" to "Deploy from a branch"
+   - Select "gh-pages" branch and "/" (root) folder
+   - Click Save
 
 Your site will be available at `https://yourusername.github.io/mkdocs-plex-guide-template`
 
@@ -21,21 +24,25 @@ The site is automatically built using GitHub Actions whenever changes are pushed
 ## 📝 Customization
 
 ### Basic Configuration
-The following values are automatically set via environment variables:
+The following values are automatically set via environment variables in [`ci.yml`](.github/workflows/ci.yml):
 - `username` - Your GitHub username (lowercase)
 - `repo_name` - Repository name
 - `year` - Current year
+
+These values are used for the header / footer within MKDocs.
 
 ### Content Customization
 Key files to modify:
 - `docs/*.md` - Documentation pages
 - `docs/stylesheets/extra.css` - [Custom admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#custom-admonitions)
-- `docs/assets/images/` - Images and video
+- `docs/assets/` - Images and video
 
 ### Default Values
 You can customize default values for:
-- Request URL: `request.example.com`
-- Domain name: `example.com`
+- request_url: `request.example.com`
+- plex_url: `plex.example.com`
+- plex_libraries: `Movies and TV Shows`
+- noreply_email: `example.com`
 
 Edit these in [`main.py`](main.py) in the project root. These values are used throughout the rendered markdown pages.
 

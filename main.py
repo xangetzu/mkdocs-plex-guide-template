@@ -14,5 +14,7 @@ def define_env(env):
         "repo_name": repo_name,
         "year": current_year,
         "request_url": "request.example.com",
-        "domain": "example.com"
+        "plex_url": "plex.example.com",
+        "plex_libraries": "Movies and TV Shows"
+        "noreply_email": "noreply@example.com",
     })
