@@ -19,9 +19,12 @@ jobs:
           # Get current year
           YEAR=$(date +'%Y')
 
+          # Convert username to lowercase
+          USERNAME=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+
           # Process the entire mkdocs.yml file
           cat mkdocs.yml | \
-          sed "s/{{ username }}/${{ github.repository_owner }}/g" | \
+          sed "s/{{ username }}/${USERNAME}/g" | \
           sed "s/{{ repo_name }}/${{ github.event.repository.name }}/g" | \
           sed "s/{{ year }}/${YEAR}/g" \
           > mkdocs.generated.yml
