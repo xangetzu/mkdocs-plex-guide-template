@@ -131,4 +131,6 @@ extra:
     plex_libraries: !ENV [PLEX_LIBRARIES, "Movies and TV Shows"]
     noreply_email: !ENV [NOREPLY_EMAIL, "noreply@example.com"]
 
-  env: !ENV [GITHUB_REF_NAME, 'main']
+  env:
+    branch: !ENV [GITHUB_REF_NAME, 'main']
+    commit_sha: !ENV [commit_sha, '']  # Will be empty on main, show SHA on develop
