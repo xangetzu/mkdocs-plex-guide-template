@@ -46,13 +46,23 @@ The following values are automatically set via environment variables in [`ci.yml
 
 ### Required Variables and Default Values
 > [!NOTE]
-> These can also be set in [Settings > Security > Secrets and variables > Actions > Variables](../../settings/variables/actions)
+> These can be set in [Settings > Security > Secrets and variables > Actions > Variables](../../settings/variables/actions)
 
-The following values can be set in [`main.py`](main.py). These values are used throughout the rendered site pages:
-- `request_url` - `request.example.com`
-- `plex_url` - `plex.example.com`
-- `plex_libraries` - `Movies and TV Shows`
-- `noreply_email` - `noreply@example.com`
+Variables are defined in the `extra:` section of [`mkdocs.yml`](mkdocs.yml#L126) and can be used throughout your markdown pages. The system first checks for environment variables, and if not found, uses the specified default values:
+
+```yaml
+extra:
+  vars:
+    request_url: !ENV [REQUEST_URL, "request.example.com"]
+    plex_url: !ENV [PLEX_URL, "plex.example.com"]
+    plex_libraries: !ENV [PLEX_LIBRARIES, "Movies and TV Shows"]
+    noreply_email: !ENV [NOREPLY_EMAIL, "noreply@example.com"]
+```
+
+You can reference these variables in your docs markdown files using the following syntax:
+```markdown
+The request system is available at {{ vars.request_url }}
+```
 
 ### Content Customization
 Key files to modify:

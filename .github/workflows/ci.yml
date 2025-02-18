@@ -32,13 +32,11 @@ jobs:
         github.event_name == 'workflow_dispatch' ||
         github.event_name == 'pull_request'
       )
-    # env:
-    #   GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-    #   GITHUB_REPOSITORY: ${{ github.repository }}
-      # REQUEST_URL: ${{ vars.REQUEST_URL }}
-      # PLEX_URL: ${{ vars.PLEX_URL }}
-      # PLEX_LIBRARIES: ${{ vars.PLEX_LIBRARIES }}
-      # NOREPLY_EMAIL: ${{ vars.NOREPLY_EMAIL }}
+    env:
+      REQUEST_URL: ${{ vars.REQUEST_URL }}
+      PLEX_URL: ${{ vars.PLEX_URL }}
+      PLEX_LIBRARIES: ${{ vars.PLEX_LIBRARIES }}
+      NOREPLY_EMAIL: ${{ vars.NOREPLY_EMAIL }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -77,11 +75,6 @@ jobs:
           sed "s/{{ year }}/${YEAR}/g" \
           > mkdocs.generated.yml
           mv mkdocs.generated.yml mkdocs.yml
-
-      # - name: Configure Git Credentials
-      #   run: |
-      #     git config user.name github-actions[bot]
-      #     git config user.email 41898282+github-actions[bot]@users.noreply.github.com
 
       - name: Build Site
         run: mkdocs build
