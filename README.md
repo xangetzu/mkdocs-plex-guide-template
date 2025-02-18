@@ -76,10 +76,6 @@ If your deployment fails, check:
 1. [GitHub Pages](../../settings/pages) is enabled and set to "GitHub Actions" as the source
 2. [GitHub Actions](../../actions) is enabled for your repository
 
-If you have an older fork and are encountering persistent issues:
-> [!TIP]
-> As a last resort (if you don't have many custom changes), you can try deleting and re-forking the repository. This template is actively maintained in the main branch since [GitHub Pages currently doesn't support multiple branch deployments](https://github.com/orgs/community/discussions/7730#discussioncomment-7603270). While this feature is planned, for now all development happens in the main branch, which might occasionally lead to breaking changes.
-
 ## 📚 Resources
 
 ### Documentation / Plugins
