@@ -84,7 +84,6 @@ plugins:
       # The plugin will make one request per mkdocs document
       # See: https://github.com/ojacques/mkdocs-git-committers-plugin-2
       #token:
-  - macros
 
 markdown_extensions:
   - toc:
