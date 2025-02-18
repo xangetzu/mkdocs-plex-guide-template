@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% if config.extra.env == "develop" %}
+<!-- Development Banner -->
+<div class="banner">
+    <p style="color:#ffffff; display:inline;">⚠️ Development Preview Build</p>
+</div>
+{% endif %}
+
+<!-- Original Header -->
+{% include "partials/header.html" %}
+{% endblock %}

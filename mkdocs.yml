@@ -5,6 +5,7 @@ repo_name: !ENV GITHUB_REPOSITORY
 theme:
   name: material
   logo: assets/images/plex-logo.webp
+  custom_dir: docs/overrides
   icon:
     repo: fontawesome/brands/github
   features:
@@ -105,7 +106,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-copyright: !ENV [str("Copyright &copy; 2025 {}").format(GITHUB_REPOSITORY_OWNER), "Copyright &copy; 2025 username"]
+copyright: "Copyright &copy; 2025 {{ username }}"
 
 extra_css:
   - stylesheets/extra.css
@@ -129,3 +130,5 @@ extra:
     plex_url: !ENV [PLEX_URL, "plex.example.com"]
     plex_libraries: !ENV [PLEX_LIBRARIES, "Movies and TV Shows"]
     noreply_email: !ENV [NOREPLY_EMAIL, "noreply@example.com"]
+
+  env: !ENV [GITHUB_REF_NAME, 'production']
