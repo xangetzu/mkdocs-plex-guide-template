@@ -75,7 +75,7 @@ plugins:
       type: timeago
   - git-committers:
       repository: !ENV GITHUB_REPOSITORY
-      branch: main
+      branch: !ENV GITHUB_REF_NAME
       exclude_committers:
         - "web-flow"  # GitHub web UI edits
         - "actions-user"  # GitHub Actions
@@ -83,7 +83,7 @@ plugins:
       # For a repository hosted on GitHub, you can provide a token to increase the rate limit and go beyond the default 60 requests per hour per IP address.
       # The plugin will make one request per mkdocs document
       # See: https://github.com/ojacques/mkdocs-git-committers-plugin-2
-      #token:
+      token: !ENV GITHUB_TOKEN
 
 markdown_extensions:
   - toc:
@@ -105,7 +105,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-copyright: "Copyright &copy; {{ year }} {{ username }}"
+copyright: "Copyright &copy; 2025 !ENV GITHUB_REPOSITORY_OWNER"
 
 extra_css:
   - stylesheets/extra.css
