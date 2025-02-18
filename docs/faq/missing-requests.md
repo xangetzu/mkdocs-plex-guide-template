@@ -1,10 +1,10 @@
 # I requested something an hour ago but it hasn't shown up yet. Why?
 
-When requesting content at [{{ request_url }}](https://{{ request_url }}), you'll see three important dates:
+When requesting content at [{{ vars.request_url }}](https://{{ vars.request_url }}), you'll see three important dates:
 
 ![Overseerr Release Dates](../assets/images/overseerr-release-dates.webp){ width="320" }
 /// caption
-Release dates within {{ request_url }}
+Release dates within {{ vars.request_url }}
 ///
 
 1. Theatrical Release - When it hits theaters

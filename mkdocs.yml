@@ -1,15 +1,13 @@
 site_name: "{{ username }}.github.io"
 site_url: "https://{{ username }}.github.io"
 repo_url: "https://github.com/{{ username }}/{{ repo_name }}"
-repo_name: "{{ username }}/{{ repo_name }}"
+repo_name: !ENV GITHUB_REPOSITORY
 theme:
   name: material
   logo: assets/images/plex-logo.webp
   icon:
     repo: fontawesome/brands/github
   features:
-    #- navigation.tabs
-    #- navigation.sections
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.footer
@@ -71,11 +69,12 @@ nav:
 plugins:
   - search
   - mkdocs-video
+  - markdownextradata: {}
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
   - git-committers:
-      repository: "{{ username }}/{{ repo_name }}"
+      repository: !ENV GITHUB_REPOSITORY
       branch: main
       exclude_committers:
         - "web-flow"  # GitHub web UI edits
@@ -121,5 +120,13 @@ extra:
       link: https://discord.com
       name: Discord Channel
     - icon: fontawesome/solid/globe
-      link: "https://{{ username }}.github.io"
+      link: "https://{{ username }}.github.io/mkdocs-plex-guide-template/"
       name: Personal Website
+
+  vars:
+    username: !ENV GITHUB_REPOSITORY_OWNER
+    repo_name: !ENV GITHUB_REPOSITORY
+    request_url: !ENV [REQUEST_URL, "request.example.com"]
+    plex_url: !ENV [PLEX_URL, "plex.example.com"]
+    plex_libraries: !ENV [PLEX_LIBRARIES, "Movies and TV Shows"]
+    noreply_email: !ENV [NOREPLY_EMAIL, "noreply@example.com"]

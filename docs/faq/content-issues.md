@@ -4,7 +4,7 @@ If you encounter any problems with content (such as distorted video, incorrect m
 
 ## Using Overseerr (Preferred Method)
 
-   1. Visit [{{ request_url }}](https://{{ request_url }})
+   1. Visit [{{ vars.request_url }}](https://{{ vars.request_url }})
    2. Find the problematic Movie or TV Show
    3. Click the yellow exclamation point icon in the top right
    4. Enter the details of the issue

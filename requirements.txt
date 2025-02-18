@@ -19,3 +19,4 @@ requests~=2.26
 mkdocs-git-revision-date-localized-plugin
 mkdocs-git-committers-plugin-2~=2.5.0
 mkdocs-macros-plugin
+mkdocs-markdownextradata-plugin
