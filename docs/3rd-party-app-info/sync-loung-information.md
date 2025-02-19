@@ -1,10 +1,12 @@
 # Sync-Lounge Information
 
-Information on how awesome sync-lounge is. need to fix urls and stuff. Links should be in these docs. 
+SyncLounge (Previously PlexTogether) is a tool to sync [Plex](https://plex.tv) content across multiple players in multiple locations.
 
-1. fact 1
-2. Fact 2
-3. Fact 3
+## How it works
+
+SyncLounge aims to keep multiple viewing sessions in sync regardless of whether the clients are in the same room or across the globe. To do this SyncLounge utilizes a middle-man server to communicate between each of the SyncLounge clients. Users choose their Plex client, decide on a SyncLounge Server and Room name and join up. Your friends/family can do the same. Whoever joins the room first will become the host.
+
+The host has complete control over a room. Commands they send to their client will be sent through to other people in the room (Play, Pause, Seek etc). If the host starts playing something different, SyncLounge will search all of your available Plex Media Servers for an equivalent copy, even if it is not from the same Plex Media Server as the Host.
 
 **Bold Text**: Bold text is cool
 
