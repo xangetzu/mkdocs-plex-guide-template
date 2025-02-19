@@ -1,15 +1,15 @@
-# Pinning Libraries - Copied from pinning librarys
+# Overseer information
 
-After accepting your invitation to my Plex server, you'll need to pin my shared libraries to your sidebar. This is a required step - without it, you might only see Plex's default content instead of my media collection. Here's what you need to know:
+Overseerr is a 3rd party app that connects to my Plex service. It requires you to log in using plex's Auth system to verify access to my server. It does a lot of stuff that I will explain in this doc. blah blah blah.
 
-1. Look for "{{ vars.username }}'s Plex" in your media sources
-2. You'll see the following libraries: {{ vars.plex_libraries }}
-3. Pin these libraries to your sidebar
+1. fact 1
+2. fact 2
+3. fact 3
 
-**Recommended**: Unpin Plex's default libraries to keep your Home screen focused on my content. This is especially important since Plex has been increasingly promoting their own content in 2025, making it harder to distinguish between their media and mine.
+**bold test**: Bold text is awesome.
 
 !!! tip
-    If you see any advertisements while watching, you're viewing Plex's content, not mine. My server never shows ads.
+    Tips are cool. 
 
 !!! example "How-to: Pinning Libraries"
 
