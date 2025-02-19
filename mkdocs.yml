@@ -126,10 +126,10 @@ extra:
   vars:
     username: !ENV GITHUB_REPOSITORY_OWNER
     repo_name: !ENV GITHUB_REPOSITORY
-    request_url: !ENV [REQUEST_URL, "request.example.com"]
-    plex_url: !ENV [PLEX_URL, "plex.example.com"]
-    plex_libraries: !ENV [PLEX_LIBRARIES, "Movies and TV Shows"]
-    noreply_email: !ENV [NOREPLY_EMAIL, "noreply@example.com"]
+    request_url: "request.example.com"
+    plex_url: "plex.example.com"
+    plex_libraries: "Movies and TV Shows"
+    noreply_email: "noreply@example.com"
 
   env:
     branch: !ENV [GITHUB_REF_NAME, 'main']
