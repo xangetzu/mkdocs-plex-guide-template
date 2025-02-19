@@ -126,7 +126,7 @@ extra:
   vars:
     username: !ENV GITHUB_REPOSITORY_OWNER
     repo_name: !ENV GITHUB_REPOSITORY
-    request_url: !ENV [REQUEST_URL, "overseerr.ptolemi.net"]
+    request_url: !ENV [REQUEST_URL, "https://overseerr.ptolemi.net"]
     plex_url: !ENV [PLEX_URL, "plex.ptolemi.net"]
     tuatulli_url: !ENV [PLEX_URL, "tautulli.ptolemi.net"]
     syncelounge_url: !ENV [PLEX_URL, "sync-lounge.ptolemi.net"]
