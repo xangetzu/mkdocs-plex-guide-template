@@ -127,10 +127,10 @@ extra:
     username: !ENV GITHUB_REPOSITORY_OWNER
     repo_name: !ENV GITHUB_REPOSITORY
     request_url: "https://overseerr.ptolemi.net"
-    plex_url: !ENV [PLEX_URL, "plex.ptolemi.net"]
-    tuatulli_url: !ENV [PLEX_URL, "tautulli.ptolemi.net"]
-    syncelounge_url: !ENV [PLEX_URL, "sync-lounge.ptolemi.net"]
-    plex_libraries: !ENV [PLEX_LIBRARIES, "Movies and TV Shows"]
-    noreply_email: !ENV [NOREPLY_EMAIL, "noreply@example.com"]
+    plex_url: "plex.ptolemi.net"
+    tuatulli_url: "tautulli.ptolemi.net"
+    syncelounge_url: "sync-lounge.ptolemi.net"
+    plex_libraries: "Movies and TV Shows"
+    noreply_email: "noreply@example.com"
 
   env: !ENV [GITHUB_REF_NAME, 'production']
