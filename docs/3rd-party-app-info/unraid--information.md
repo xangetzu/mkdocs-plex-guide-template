@@ -1,6 +1,4 @@
-# Unraid information
-
-> # What will you build?
+> # UNRAID: What will you build?
 >
 >Unraid is a powerful, easy-to-use operating system for self-hosted servers and network-attached storage. Make the most out of your hardware—no matter what kind of drive you have on hand.
 > 
