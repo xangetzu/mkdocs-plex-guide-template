@@ -1,6 +1,5 @@
 # Plexamp information
 
-**Plexamp** 
 > Imagine loving music so much that you pour your heart, soul, and engineering know-how into creating a completely custom music player for audiophiles just like you. Well, that’s exactly what we did. Rediscover, curate, or completely lose yourself in the music that made you with Plexamp.
 > 
 > — <cite>source: [plex.tv](https://www.plex.tv/plexamp/)
