@@ -1,7 +1,8 @@
+![qBittorrent](../assets/images/qbittorrent-logo-256.webp){ align=left }
 # **qBittorrent Information**
-
-![qBittorrent](../assets/images/qbittorrent-logo-256.webp) { align=left }
 **qBittorrent** is a bittorrent client programmed in C++ / Qt that uses libtorrent. It aims to be an alternative to all other bittorrent clients out there. 
+
+<div style="clear: both;"></div>
 
 
 ## **Some Key Features**
