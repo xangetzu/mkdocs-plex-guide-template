@@ -62,6 +62,15 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Set Build Info
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/develop" ]]; then
+            COMMIT_SHA=$(echo ${{ github.sha }} | cut -c1-7)
+            echo "commit_sha=$COMMIT_SHA" >> $GITHUB_ENV
+          else
+            echo "commit_sha=" >> $GITHUB_ENV
+          fi
+
       - name: Update mkdocs.yml
         run: |
           # Get current year
@@ -72,11 +81,14 @@ jobs:
           cat mkdocs.yml | \
           sed "s/{{ username }}/${USERNAME}/g" | \
           sed "s/{{ repo_name }}/${{ github.event.repository.name }}/g" | \
-          sed "s/{{ year }}/${YEAR}/g" \
+          sed "s/{{ year }}/${YEAR}/g" | \
+          sed "s/{{ commit_sha }}/${commit_sha}/g" \
           > mkdocs.generated.yml
           mv mkdocs.generated.yml mkdocs.yml
 
       - name: Build Site
+        env:
+          COMMIT_SHA: ${{ env.commit_sha }}
         run: mkdocs build
 
       - name: Upload artifact

@@ -24,7 +24,7 @@
   width: 100%;
   z-index: 100;       /* Increased to ensure it stays above other elements */
   text-align: center;
-  background-color: #ff9100;  /* Warning orange color */
+  background-color: #856404;
   line-height: 24px;  /* Vertically center the text */
   font-weight: 500;   /* Make text slightly bolder */
 }
@@ -36,4 +36,9 @@
 /* Adjust the main content area when banner is present */
 .banner ~ .md-main {
     height: calc(100vh - 88px);  /* Adjust for banner + header height */
+}
+
+.banner a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }

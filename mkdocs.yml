@@ -142,4 +142,6 @@ extra:
     plex_libraries: "Movies and TV Shows"
     noreply_email: "noreply@example.com"
 
-  env: !ENV [GITHUB_REF_NAME, 'production']
+  env:
+    branch: !ENV [GITHUB_REF_NAME, 'main']
+    commit_sha: !ENV [commit_sha, '']  # Will be empty on main, show SHA on develop
