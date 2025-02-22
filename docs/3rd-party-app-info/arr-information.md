@@ -29,7 +29,7 @@ Radarr is a movie collection manager for Usenet and BitTorrent users. It can mon
 ![Readarr-Logo](../assets/images/readarr-logo-256.webp){ align=left }
 ### **Readarr**
 Readarr is in early stages of development, alpha/beta binary builds are not yet available. Use of any test builds isn't recommend, and may have detrimental effects on your library.
-Readarr is an ebook (and maybe eventually magazine/audio--book) collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort and rename them.
+Readarr is an ebook (and maybe eventually magazine/audio--book) collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort and rename them.<br>
 
 <div style="clear: both;"></div>
 
