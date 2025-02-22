@@ -6,7 +6,7 @@
 
 ![Plexamp Supersonic Phones](../assets/images/plexamp-supersonic_phones.webp)
 
-## **Included Features**
+### **Included Features**
 
 - Gapless playback
 - Loudness leveling
@@ -23,4 +23,3 @@
 
 Learn more about Plexamp and the added features with a Plex Pass: **[here](https://www.plex.tv/plexamp/)**
 
-[Plexamp](../assets/images/plexamp-logo-full.webp)

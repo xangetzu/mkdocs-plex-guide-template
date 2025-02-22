@@ -8,6 +8,7 @@ SyncLounge aims to keep multiple viewing sessions in sync regardless of whether 
 
 The host has complete control over a room. Commands they send to their client will be sent through to other people in the room (Play, Pause, Seek etc). If the host starts playing something different, SyncLounge will search all of your available Plex Media Servers for an equivalent copy, even if it is not from the same Plex Media Server as the Host.
 
+![SyncLounge](../assets/images/sync-lounge-logo-full.webp){ align=left }
 Have a **Plex** server and want to host your own **Sync-Lounge*? more info can be found on their github repository: **[here](https://github.com/synclounge/synclounge)**
 
-![SyncLounge](../assets/images/sync-lounge-logo-full.webp)
+
