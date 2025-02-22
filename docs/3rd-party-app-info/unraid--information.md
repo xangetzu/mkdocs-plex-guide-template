@@ -13,6 +13,3 @@
 - NAS Operating System - Simply your setup
 - Docker Applications - Access to Community built applications.
 - Virtual Machines - Enable full featured Virtual machines
-
-
-Learn more about Unraid: [here](https://unraid.net/)
