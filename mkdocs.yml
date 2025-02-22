@@ -1,6 +1,6 @@
 site_name: "{{ username }}.github.io"
 site_url: "https://{{ username }}.github.io"
-repo_url: "https://github.com/{{ username }}/{{ repo_name }}"
+repo_url: "https://github.com/{{ username }}/{{ repo_name }}basic-info/"
 repo_name: !ENV GITHUB_REPOSITORY
 theme:
   name: material
@@ -37,7 +37,7 @@ theme:
       accent: purple
 
 nav:
-  - Preamble: index.md
+  - Preamble: basic-info/index.md
   - What is Plex?: basic-info/what-is-plex.md
   - Is Plex safe to use?: basic-info/plex-safety.md
   - Setup:
