@@ -1,19 +1,21 @@
-# Pinning Libraries - Copied from pinning librarys
+# Overseer information
 
-After accepting your invitation to my Plex server, you'll need to pin my shared libraries to your sidebar. This is a required step - without it, you might only see Plex's default content instead of my media collection. Here's what you need to know:
+**Overseerr** is a free and open source software application for managing requests for your media library. It integrates with your existing services, such as **[Sonarr](https://sonarr.tv/)**, **[Radarr](https://radarr.video/)**, and **[Plex](https://www.plex.tv/)**! It also supports issue reporting for your users having trouble with specific media.
 
-1. Look for "{{ vars.username }}'s Plex" in your media sources
-2. You'll see the following libraries: {{ vars.plex_libraries }}
-3. Pin these libraries to your sidebar
+## Current Features
 
-**Recommended**: Unpin Plex's default libraries to keep your Home screen focused on my content. This is especially important since Plex has been increasingly promoting their own content in 2025, making it harder to distinguish between their media and mine.
+- Full Plex integration. Authenticate and manage user access with Plex!
+- Easy integration with your existing services. Currently, Overseerr supports Sonarr and Radarr. More to come!
+- Plex library scan, to keep track of the titles which are already available.
+- Customizable request system, which allows users to request individual seasons or movies in a friendly, easy-to-use interface.
+- Incredibly simple request management UI. Don't dig through the app to simply approve recent requests!
+- Easy reporting of issues, Just search for the title and click the issue button!
+- Granular permission system.
+- Support for various notification agents.
+- Mobile-friendly design, for when you need to approve requests on the go!
 
-!!! tip
-    If you see any advertisements while watching, you're viewing Plex's content, not mine. My server never shows ads.
+Have a **Plex** server and want to host your own **Overseerr*? more info can be found on their github repository: [here](https://github.com/sct/overseerr)
 
-!!! example "How-to: Pinning Libraries"
+!!! example
 
-    ![Example](assets/images/pinning-libraries-1.webp)
-    ![Example](assets/images/pinning-libraries-2.webp)
-
-    **Source**: [plxplainers.xyz](https://www.plxplainers.xyz/)
+    ![Example](../assets/images/overseerr_logo_full.webp)

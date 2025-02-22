@@ -44,25 +44,27 @@ The following values are automatically set via environment variables in [`ci.yml
 - `repo_name` - Repository name
 - `year` - Current year
 
-### Required Variables and Default Values
-> [!NOTE]
-> These can be set in [Settings > Security > Secrets and variables > Actions > Variables](../../settings/variables/actions)
+# Required Variables and Default Values
 
-Variables are defined in the `extra:` section of [`mkdocs.yml`](mkdocs.yml#L126) and can be used throughout your markdown pages. The system first checks for environment variables, and if not found, uses the specified default values:
+> [!NOTE]
+> If you want to use GitHub environment variables (like having different URLs for staging/production), you'll need to define them in your repository's [Settings > Security > Secrets and variables > Actions > Variables](../../settings/variables/actions). Use the `!ENV` syntax in `mkdocs.yml` to reference these variables. If you don't need this functionality, you can use plaintext values directly.
+
+Variables are defined in the `extra:` section of [`mkdocs.yml`](mkdocs.yml#L126) and can be used throughout your markdown pages. For repository variables like `username` and `repo_name`, we use GitHub's built-in environment variables. For custom variables, we use plaintext values:
 
 ```yaml
 extra:
   vars:
-    request_url: !ENV [REQUEST_URL, "request.example.com"]
-    plex_url: !ENV [PLEX_URL, "plex.example.com"]
-    plex_libraries: !ENV [PLEX_LIBRARIES, "Movies and TV Shows"]
-    noreply_email: !ENV [NOREPLY_EMAIL, "noreply@example.com"]
+    # GitHub environment variables
+    username: !ENV GITHUB_REPOSITORY_OWNER
+    repo_name: !ENV GITHUB_REPOSITORY
+    # Custom plaintext values
+    request_url: "request.example.com"
+    plex_url: "plex.example.com"
+    plex_libraries: "Movies and TV Shows"
+    noreply_email: "noreply@example.com"
 ```
 
-You can reference these variables in your docs markdown files using the following syntax:
-```markdown
-The request system is available at {{ vars.request_url }}
-```
+You can reference these variables in your markdown files using the syntax `{{ vars.variable_name }}`.
 
 ### Content Customization
 Key files to modify:
