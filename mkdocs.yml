@@ -37,19 +37,20 @@ theme:
       accent: purple
 
 nav:
-  - Preamble: index.md
-  - What is Plex?: what-is-plex.md
-  - Is Plex safe to use?: plex-safety.md
-  - Pinning Libraries: pinning-libraries.md
-  - Managing Newsletter Subscriptions: unsubscribe-from-plex-newsletter.md
-  - Disabling Online Media Sources: disabling-online-media-sources.md
-  - Requesting Content: requesting-content.md
-  - Changing Plex streaming quality:
-    - changing-stream-quality/index.md
-    - iOS & Android: changing-stream-quality/ios-android.md
-    - tvOS (Apple TV): changing-stream-quality/tv-os.md
-    - Amazon Fire TV, Android TV, PlayStation 4/5, Xbox, Roku, Smart TV (LG, Samsung, VIZIO): changing-stream-quality/streaming-devices.md
-    - Web Browser: changing-stream-quality/web-browser.md
+  - Preamble: basic-info/index.md
+  - What is Plex?: basic-info/what-is-plex.md
+  - Is Plex safe to use?: basic-info/plex-safety.md
+  - Setup:
+    - Pinning Libraries: setup/pinning-libraries.md
+    - Managing Newsletter Subscriptions: setup/unsubscribe-from-plex-newsletter.md
+    - Disabling Online Media Sources: setup/disabling-online-media-sources.md
+    - Requesting Content: setup/requesting-content.md
+    - Changing Plex streaming quality:
+      - setup/changing-stream-quality/index.md
+      - iOS & Android: setup/changing-stream-quality/ios-android.md
+      - tvOS (Apple TV): setup/changing-stream-quality/tv-os.md
+      - Amazon Fire TV, Android TV, PlayStation 4/5, Xbox, Roku, Smart TV (LG, Samsung, VIZIO): setup/changing-stream-quality/streaming-devices.md
+      - Web Browser: setup/changing-stream-quality/web-browser.md
   - FAQ:
     - What is transcoding?: faq/what-is-transcoding.md
     - Why do I need to buy the Plex app on my phone?: faq/why-do-i-to-buy-plex-app.md
@@ -65,7 +66,17 @@ nav:
     - Can I share your Plex server with someone else?: faq/can-i-share-your-plex.md
     - Plex is awesome! Can I send you some money to support it?: faq/how-can-i-support-you.md
     - Why Bitrate Matters: faq/why-bitrate-matters.md
-  - Useful Links: useful-links.md
+  - My Setup:
+    - 3rd-party-app-info/index.md
+    - 3rd Pary Applications:
+      - Unraid: 3rd-party-app-info/unraid-information.md
+      - Overseerr: 3rd-party-app-info/overseerr-information.md
+      - Tautulli: 3rd-party-app-info/tautulli-information.md
+      - Sync-Lounge: 3rd-party-app-info/sync-lounge-information.md
+      - ARR Applications: 3rd-party-app-info/arr-information.md
+      - qBittorrent: 3rd-party-app-info/qbittorent-information.md
+      - Plexamp: 3rd-party-app-info/plexamp-information.md
+  - Useful Links: basic-info/useful-links.md
 
 plugins:
   - search
@@ -117,11 +128,9 @@ extra:
       link: "https://github.com/{{ username }}"
       name: "{{ username }} @ Github"
     - icon: fontawesome/brands/discord
-      link: https://discord.com
-      name: Discord Channel
-    - icon: fontawesome/solid/globe
-      link: "https://{{ username }}.github.io/mkdocs-plex-guide-template/"
-      name: Personal Website
+      link: https://discord.com/users/401938150877954048
+      name: Xangetzu Discord
+
 
   vars:
     username: !ENV GITHUB_REPOSITORY_OWNER
