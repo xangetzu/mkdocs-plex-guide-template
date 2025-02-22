@@ -16,11 +16,15 @@ Lidarr is a music collection manager for Usenet and BitTorrent users. It can mon
 ![Prowlarr-Logo](../assets/images/prowlarr-logo-256.webp){ align=left }
 Prowlarr is a indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required (we do it all).<br>
 
+<div style="clear: both;"></div>
+
 
 ### **Radarr**
 
 ![Radarr-Logo](../assets/images/radarr-logo-256.webp){ align=left }
 Radarr is a movie collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new movies and will interface with clients and indexers to grab, sort, and rename them. It can also be configured to automatically upgrade the quality of existing files in the library when a better quality format becomes available.<br>
+
+<div style="clear: both;"></div>
 
 
 ### **Readarr**
@@ -29,17 +33,23 @@ Radarr is a movie collection manager for Usenet and BitTorrent users. It can mon
 Readarr is in early stages of development, alpha/beta binary builds are not yet available. Use of any test builds isn't recommend, and may have detrimental effects on your library.
 Readarr is an ebook (and maybe eventually magazine/audio--book) collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort and rename them.<br>
 
+<div style="clear: both;"></div>
+
 
 ### **Sonarr**
 
 ![Sonarr-Logo](../assets/images/sonarr-logo-256.webp){ align=left }
 Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.<br>
 
+<div style="clear: both;"></div>
+
 
 ### **Whisparr**
 
 ![Whisparr-Logo](../assets/images/whisparr-logo-256.webp){ align=left }
 Whisparr is an adult movie collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new movies and will interface with clients and indexers to grab, sort, and rename them. It can also be configured to automatically upgrade the quality of existing files in the library when a better quality format becomes available. Note that only one type of a given movie is supported. If you want both an 4k version and 1080p version of a given movie you will need multiple instances.<br>
+
+<div style="clear: both;"></div>
 
 
 ## **Major Features Include**:
