@@ -6,15 +6,17 @@
 
 ### **Lidarr**
 
+<p
 ![Lidarr-Logo](../assets/images/lidarr-logo-256.webp){ align=left }
 Lidarr is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.<br>
-
+</p>
 
 ### **Prowlarr**
 
+<p
 ![Prowlarr-Logo](../assets/images/prowlarr-logo-256.webp){ align=left }
 Prowlarr is a indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required (we do it all).<br>
-
+</p>
 
 ### **Radarr**
 
