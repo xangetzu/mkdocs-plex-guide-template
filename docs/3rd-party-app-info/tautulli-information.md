@@ -1,8 +1,8 @@
-# Tautulli information
+# **Tautulli information**
 
-**tautulli** is a free and open source python application for monitoring, analysis and notifications for [Plex](https://www.plex.tv/)
+**Tautulli** is a free and open source python application for monitoring, analysis and notifications for [Plex](https://www.plex.tv/)
 
-## Current Features
+## **Current Features**
 
 - Responsive web design viewable on desktop, tablet and mobile web browsers.
 - Themed to complement Plex/Web.
@@ -19,8 +19,6 @@
 - Full sync list data on all users syncing items from your library.
 - And many more!!
 
-Have a **Plex** server and want understand your usages statistics or set up notifications? More info can be found on their github repository: [here](https://github.com/Tautulli/Tautulli)
+Have a **Plex** server and want understand your usages statistics or set up notifications? More info can be found on their github repository: **[here](https://github.com/Tautulli/Tautulli)**
 
-!!! example
-
-    ![Example](../assets/images/tautulli_logo_full.webp)
+![Tautulli](../assets/images/tautulli-logo-full.webp)
