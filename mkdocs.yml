@@ -37,7 +37,7 @@ theme:
       accent: purple
 
 nav:
-  - Preamble: basic-info/index.md
+  - Preamble: index.md
   - What is Plex?: basic-info/what-is-plex.md
   - Is Plex safe to use?: basic-info/plex-safety.md
   - Setup:

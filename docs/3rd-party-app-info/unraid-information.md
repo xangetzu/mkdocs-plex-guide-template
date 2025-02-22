@@ -4,7 +4,7 @@
 > 
 > — <cite>source: [unraid.net](https://unraid.net/)
 
-## **Primary Features and uses**
+### **Primary Features and uses**
 
 - NAS Operating System - Simply your setup
 - Docker Applications - Access to Community built applications.

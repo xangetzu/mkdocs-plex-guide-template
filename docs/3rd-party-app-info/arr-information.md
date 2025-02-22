@@ -2,8 +2,6 @@
 
 **ARR** applications are a suite of programs for media management. There are six applications, [Lidarr](https://github.com/ServarrAdmin/Lidarr), [Prowlarr](https://github.com/ServarrAdmin/Prowlarr), [Radarr](https://github.com/ServarrAdmin/Radarr), [Readarr](https://github.com/ServarrAdmin/Readarr), [Sonarr](https://github.com/ServarrAdmin/Sonarr), [Whisparr](https://github.com/ServarrAdmin/Whisparr) and the interact with other services such as [Overseerr](https://github.com/sct/overseerr) and [qBittorrent](https://www.qbittorrent.org//) to automate media gathering and monitoring for your libraries.
 
-## **Description by App**
-
 
 ![Lidarr-Logo](../assets/images/lidarr-logo-256.webp){ align=left }
 ### **Lidarr**
@@ -43,12 +41,12 @@ Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS fee
 
 ![Whisparr-Logo](../assets/images/whisparr-logo-256.webp){ align=left }
 ### **Whisparr**
-Whisparr is an adult movie collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new movies and will interface with clients and indexers to grab, sort, and rename them. It can also be configured to automatically upgrade the quality of existing files in the library when a better quality format becomes available. Note that only one type of a given movie is supported. If you want both an 4k version and 1080p version of a given movie you will need multiple instances.
+Whisparr is an adult movie collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new movies and will interface with clients and indexers to grab, sort, and rename them. It can also be configured to automatically upgrade the quality of existing files in the library when a better quality format becomes available.
 
 <div style="clear: both;"></div>
 
 
-## **Major Features Include**:
+### **Major Features Include**:
 
 - A beautiful UI
 - Adding metadata such as posters and information for Kodi and other apps to use
@@ -70,5 +68,5 @@ Whisparr is an adult movie collection manager for Usenet and BitTorrent users. I
 
 
 
-![Servarr-Logo](../assets/images/servarr-logo-256.webp) { align=left }
+![Servarr-Logo](../assets/images/servarr-logo-256.webp){ align=left }
 If you'd like to know more, visit the Servarr Admin page on github: **[here](https://github.com/ServarrAdmin?tab=repositories)**

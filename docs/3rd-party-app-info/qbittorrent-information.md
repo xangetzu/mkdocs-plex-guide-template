@@ -5,7 +5,7 @@
 <div style="clear: both;"></div>
 
 
-## **Some Key Features**
+### **Some Key Features**
 
 - Easy to understand UI
 - Can operate on almost any operating system or can be run as a container.
